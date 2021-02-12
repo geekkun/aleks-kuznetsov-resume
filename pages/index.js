@@ -5,19 +5,20 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Aleks Kuznetsov</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Aleks Kuznetsov
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          {/*Get started by editing{' '}*/}
+          {/*<code className={styles.code}>pages/index.js</code>*/}
         </p>
+
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
@@ -52,12 +53,21 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://visas.digital"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Visas Digital {' '}
+          {/*<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />*/}
+        </a>
+        <span>|</span>
+        <a
+          href="https://wish.surf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Wish Surf
+          {/*<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />*/}
         </a>
       </footer>
     </div>
