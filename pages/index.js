@@ -1,5 +1,27 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import nbsp from "./components/nbsp";
+
+function skill(name, href='#') {
+    let fontsize = '0 rem'
+    let empty = '&nbsp;'
+    if (name.length > 5) {
+
+    }
+    else if (name.length < 5) {
+        name+=nbsp()
+        name+=nbsp()
+        name=nbsp()+name
+        name=nbsp()+name
+    }
+
+
+    return <a href={href} className={styles.bubble}>
+        <h3>
+            {name}
+        </h3>
+    </a>
+}
 
 export default function Home() {
     return (
@@ -61,50 +83,12 @@ export default function Home() {
                 </div>
                 <h3 className={styles.subtitle}> Skills</h3>
                 <div className={styles.grid}>
-                    <a href="https://visas.digital" className={styles.bubble}>
-                        <h3>
-                            Python
-                        </h3>
-                    </a>
-                    {/*<span className={styles.divider} />*/}
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
-                    <a href="https://visas.digital" className={styles.bubble}>
-                        <h3>
-                            Python
-                        </h3>
-                    </a>
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
-                    <a href="https://visas.digital" className={styles.bubble}>
-                        <h3>
-                            Python
-                        </h3>
-                    </a>
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
-                    <a href="https://visas.digital" className={styles.bubble}>
-                        <h3>
-                            Python
-                        </h3>
-                    </a>
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
-                    <a href="https://visas.digital" className={styles.bubble}>
-                        <h3>
-                            Python
-                        </h3>
-                    </a>
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
-                    <a href="https://wish.surf" className={styles.bubble}>
-                        <h3>Vue.JS</h3>
-                    </a>
+                    {skill('Python')}
+                    {skill('Vue.JS')}
+                    {skill('Docker')}
+                    {skill('AWS')}
+
+
                 </div>
                 <h3 className={styles.subtitle}> Work Experience</h3>
                 <div className={styles.grid}>
@@ -135,7 +119,7 @@ export default function Home() {
 
                     <a href="https://www.mpw.ac.uk/" className={styles.card}>
                         <h3><img src="/mpw.jpg" alt="Mander Portman Woodward Logo" className={styles.logo}/>
-                        <span> &nbsp; Mander Portman Woodward</span>
+                            <span> &nbsp; Mander Portman Woodward</span>
                         </h3>
                         <p>2013-2015</p>
                     </a>
@@ -143,7 +127,7 @@ export default function Home() {
                         <h3>
                             <img src="/windermere.png" alt="Windermere School Logo" className={styles.logo}/>
                             <span> &nbsp;Windermere School</span>
-                            <br />
+                            <br/>
                             <span>&nbsp;</span>
                         </h3>
                         <p>2012-2013</p>
@@ -151,7 +135,7 @@ export default function Home() {
 
                     <a href="http://www.chastnayashkola.ru/" className={styles.card}>
                         <h3><img src="/lomonosov.jpg" alt="Mander Portman Woodward Logo" className={styles.logo}/>
-                        <span> &nbsp; Private Lomonosov School</span>
+                            <span> &nbsp; Private Lomonosov School</span>
                         </h3>
                         <p>2003-2014</p>
                     </a>
