@@ -129,14 +129,15 @@ export default function Home() {
                             <img src="/qmul.png" alt="Queen Mary University of London Logo" className={styles.logo}/>
                             <span> &nbsp;Queen Mary University of London</span>
                         </h3>
-                        {/*<p>Manage your travel documents and get new visas at ease</p>*/}
+
+                        <p>2015-2018</p>
                     </a>
 
                     <a href="https://www.mpw.ac.uk/" className={styles.card}>
                         <h3><img src="/mpw.jpg" alt="Mander Portman Woodward Logo" className={styles.logo}/>
                         <span> &nbsp; Mander Portman Woodward</span>
                         </h3>
-                        {/*<p>Don't limit your wishes to purchases, dream wider!</p>*/}
+                        <p>2013-2015</p>
                     </a>
                     <a href="https://www.windermereschool.co.uk/" className={styles.card}>
                         <h3>
@@ -145,14 +146,14 @@ export default function Home() {
                             <br />
                             <span>&nbsp;</span>
                         </h3>
-                        {/*<p>Manage your travel documents and get new visas at ease</p>*/}
+                        <p>2012-2013</p>
                     </a>
 
                     <a href="http://www.chastnayashkola.ru/" className={styles.card}>
                         <h3><img src="/lomonosov.jpg" alt="Mander Portman Woodward Logo" className={styles.logo}/>
                         <span> &nbsp; Private Lomonosov School</span>
                         </h3>
-                        {/*<p>Don't limit your wishes to purchases, dream wider!</p>*/}
+                        <p>2003-2014</p>
                     </a>
                 </div>
             </main>
