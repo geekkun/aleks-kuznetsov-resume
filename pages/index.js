@@ -3,16 +3,17 @@ import styles from '../styles/Home.module.css'
 import nbsp from "./components/nbsp";
 
 function skill(name, href='#') {
-    let fontsize = '0 rem'
-    let empty = '&nbsp;'
     if (name.length > 5) {
 
     }
     else if (name.length < 5) {
-        name+=nbsp()
-        name+=nbsp()
-        name=nbsp()+name
-        name=nbsp()+name
+        if (name.length % 2 !== 0) {
+            let len = 5-name.length
+            let i;
+            for (; i < len; i++){
+                name=nbsp()+name+nbsp()
+            }
+        }
     }
 
 
