@@ -1,28 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import nbsp from "./components/nbsp";
+import Contacts from "../components/contacts";
+import Bubble from "../components/bubble";
 
-function skill(name, href='#') {
-    if (name.length > 5) {
-
-    }
-    else if (name.length < 5) {
-        if (name.length % 2 !== 0) {
-            let len = 5-name.length
-            let i;
-            for (; i < len; i++){
-                name=nbsp()+name+nbsp()
-            }
-        }
-    }
-
-
-    return <a href={href} className={styles.bubble}>
-        <h3>
-            {name}
-        </h3>
-    </a>
-}
 
 export default function Home() {
     return (
@@ -40,12 +20,7 @@ export default function Home() {
                 <p className={styles.description}>
                     {/*Get started by editing{' '}*/}
                     {/*<code className={styles.code}>pages/index.js</code>*/}
-                    Contact me via <a target="_blank"
-                                      rel="noopener noreferrer" href="mailto:me@alekskuznetsov.com">email</a> <a
-                    target="_blank"
-                    rel="noopener noreferrer" href="https://t.me/gk_kn">telegram</a> <a target="_blank"
-                                                                                        rel="noopener noreferrer"
-                                                                                        href="https://twitter.com/the_kuznetsov">twitter</a>
+                    Contact me via <Contacts />
 
                 </p>
                 <h3 className={styles.subtitle}> Personal Projects</h3>
@@ -84,12 +59,11 @@ export default function Home() {
                 </div>
                 <h3 className={styles.subtitle}> Skills</h3>
                 <div className={styles.grid}>
-                    {skill('Python')}
-                    {skill('Vue.JS')}
-                    {skill('Docker')}
-                    {skill('AWS')}
-
-
+                    {Bubble('Python')}
+                    {Bubble('Vue.JS')}
+                    {Bubble('Docker')}
+                    {Bubble('AWS')}
+                    {Bubble('FireBase')}
                 </div>
                 <h3 className={styles.subtitle}> Work Experience</h3>
                 <div className={styles.grid}>
@@ -128,8 +102,6 @@ export default function Home() {
                         <h3>
                             <img src="/windermere.png" alt="Windermere School Logo" className={styles.logo}/>
                             <span> &nbsp;Windermere School</span>
-                            <br/>
-                            <span>&nbsp;</span>
                         </h3>
                         <p>2012-2013</p>
                     </a>
@@ -143,25 +115,9 @@ export default function Home() {
                 </div>
             </main>
 
-            {/*<footer className={styles.footer}>*/}
-            {/*<a*/}
-            {/*    href="https://visas.digital"*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noopener noreferrer"*/}
-            {/*>*/}
-            {/*    Visas Digital {' '}*/}
-            {/*    /!*<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />*!/*/}
-            {/*</a>*/}
-            {/*<span>|</span>*/}
-            {/*<a*/}
-            {/*    href="https://wish.surf"*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noopener noreferrer"*/}
-            {/*>*/}
-            {/*    Wish Surf*/}
-            {/*    /!*<img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />*!/*/}
-            {/*</a>*/}
-            {/*</footer>*/}
+            <footer className={styles.footer}>
+            <Contacts />
+            </footer>
         </div>
     )
 }

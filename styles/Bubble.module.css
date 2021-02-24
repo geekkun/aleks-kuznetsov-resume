@@ -1,0 +1,50 @@
+.bubble {
+    margin: 1rem;
+    /*flex-basis: 13%;*/
+    padding: 0.5rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    transition: color 0.15s ease, border-color 0.15s ease, width 0.5s linear, height 0.5s linear;
+    font-size: 1.5rem;
+}
+
+.bubble:hover,
+.bubble:focus,
+.bubble:active {
+    color: #f36100;
+    border-color: #f36100;
+    width: 145px;
+    height: 145px;
+    transition: width 0.5s linear, height 0.5s linear;
+}
+
+.bubble h3 {
+    /*margin: 0 0 1rem 0;*/
+    /*padding-top: %;*/
+    /*font-size: 1.5rem;*/
+    overflow: hidden;
+    /*text-overflow: ellipsis;*/
+    /*text-size-adjust: auto;*/
+    /*-webkit-text-size-adjust: auto;*/
+    /*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));*/
+    transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
+}
+
+.bubble:hover h3 {
+    font-size: 2.5rem;
+    transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
+    -webkit-font-smoothing: subpixel-antialiased;
+    will-change: font-size;
+    padding-top: 0;
+}
+
+.bubble p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
