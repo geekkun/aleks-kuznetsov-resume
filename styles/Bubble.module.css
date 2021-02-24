@@ -1,50 +1,55 @@
-.bubble {
-    margin: 1rem;
-    /*flex-basis: 13%;*/
-    padding: 0.5rem;
-    text-align: center;
-    color: inherit;
-    text-decoration: none;
-    border: 1px solid #eaeaea;
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    transition: color 0.15s ease, border-color 0.15s ease, width 0.5s linear, height 0.5s linear;
-    font-size: 1.5rem;
+.bubble, .bubble_big {
+  margin: 1rem;
+  /*flex-basis: 13%;*/
+  padding: 0.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: color 0.15s ease, border-color 0.15s ease, width 0.5s linear, height 0.5s linear;
+  font-size: 21px;
+}
+.bubble_big {
+  font-size: 12px;
 }
 
-.bubble:hover,
+.bubble:hover, .bubble_big:hover,
 .bubble:focus,
-.bubble:active {
-    color: #f36100;
-    border-color: #f36100;
-    width: 145px;
-    height: 145px;
-    transition: width 0.5s linear, height 0.5s linear;
+.bubble_big:focus,
+.bubble:active,
+.bubble_big:active {
+  color: #f36100;
+  border-color: #f36100;
+  width: 135px;
+  height: 135px;
+  transition: width 0.5s linear, height 0.5s linear;
 }
 
-.bubble h3 {
-    /*margin: 0 0 1rem 0;*/
-    /*padding-top: %;*/
-    /*font-size: 1.5rem;*/
-    overflow: hidden;
-    /*text-overflow: ellipsis;*/
-    /*text-size-adjust: auto;*/
-    /*-webkit-text-size-adjust: auto;*/
-    /*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));*/
-    transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
+.bubble h3, .bubble_big h3 {
+  /*margin: 0 0 1rem 0;*/
+  /*padding-top: %;*/
+  overflow: hidden;
+  /*text-size-adjust: auto;*/
+  /*-webkit-text-size-adjust: auto;*/
+  /*font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));*/
+  transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
 }
 
-.bubble:hover h3 {
-    font-size: 2.5rem;
-    transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
-    -webkit-font-smoothing: subpixel-antialiased;
-    will-change: font-size;
-    padding-top: 0;
+.bubble:hover h3, .bubble_big:hover h3 {
+  font-size: 1.35em;
+  transition: font-size 0.5s linear, background-color 0.5s linear, padding-top 0.5s linear;
+  -webkit-font-smoothing: subpixel-antialiased;
+  will-change: font-size;
+  padding-top: 0;
 }
 
-.bubble p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
+.bubble p, .bubble_big p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
+
+/*# sourceMappingURL=Bubble.module.css.map */

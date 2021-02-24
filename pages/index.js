@@ -58,13 +58,30 @@ export default function Home() {
                     {/*</a>*/}
                 </div>
                 <h3 className={styles.subtitle}> Skills</h3>
+                {/*<div className={styles.grid}>*/}
+                {/*    {Bubble('Python', true)}*/}
+                {/*    {Bubble('Vue.JS', true)}*/}
+                {/*    {Bubble('Docker', true)}*/}
+                {/*    {Bubble('AWS', true)}*/}
+                {/*</div>*/}
                 <div className={styles.grid}>
                     {Bubble('Python')}
                     {Bubble('Vue.JS')}
                     {Bubble('Docker')}
+                    {Bubble('TypeScript')}
+                    {Bubble('TypeScript')}
+                    {Bubble('TypeScript')}
+                    {Bubble('TypeScript')}
                     {Bubble('AWS')}
-                    {Bubble('FireBase')}
+                    {Bubble('AWS')}
                 </div>
+                {/*<div className={styles.grid}>*/}
+                {/*    {Bubble('Python', true)}*/}
+                {/*    {Bubble('Vue.JS', true)}*/}
+                {/*    {Bubble('Docker', true)}*/}
+                {/*    {Bubble('AWS', true)}*/}
+                {/*</div>*/}
+
                 <h3 className={styles.subtitle}> Work Experience</h3>
                 <div className={styles.grid}>
                     <a href="https://visas.digital" className={styles.card}>
